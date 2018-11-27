@@ -5,5 +5,7 @@ sudo: false
 cache:
   directories:
     - node_modules
+install:
+  - npm install
 script:
   - ./scripts/build.sh
