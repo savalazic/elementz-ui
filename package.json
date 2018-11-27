@@ -28,6 +28,7 @@
     "@types/styled-components": "^4.1.1",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.4",
+    "coveralls": "^3.0.2",
     "husky": "^1.2.0",
     "jest": "^23.6.0",
     "lint-staged": "^8.1.0",
