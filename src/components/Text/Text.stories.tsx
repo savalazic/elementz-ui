@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import { storiesOf } from "@storybook/react";
+import { storiesOf } from '@storybook/react';
 
-import Text from "./Text";
+import Text from './Text';
 
-storiesOf("Text", module).add("with text", () => (
+storiesOf('Text', module).add('with text', () => (
   <Text text="Test storybook" />
 ));
