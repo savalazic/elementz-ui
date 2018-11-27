@@ -6,6 +6,9 @@ const Test = styled.p`
   color: #333;
 `;
 
+export const pureFunction = (state: string) => state;
+pureFunction('test');
+
 const Text: React.SFC<{ text: string }> = ({ text }) => {
   return (
     <div>
