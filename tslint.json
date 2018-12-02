@@ -8,6 +8,8 @@
   "rules": {
     "variable-name": false,
     "import-name": false,
-    "ordered-imports": false
+    "ordered-imports": false,
+    "interface-name": false,
+    "object-literal-sort-keys": false
   }
 }

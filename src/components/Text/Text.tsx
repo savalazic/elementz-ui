@@ -9,7 +9,13 @@ const Test = styled.p`
 export const pureFunction = (state: string) => state;
 pureFunction('test');
 
-const Text: React.SFC<{ text: string }> = ({ text }) => {
+export interface Props {
+  /** @default aa */
+  /** Text description */
+  text?: string;
+}
+
+export const Text = ({ text = 'aa' }: Props) => {
   return (
     <div>
       <Test>{text}</Test>
