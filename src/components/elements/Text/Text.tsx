@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Test = styled.p`
-  font-family: sans-serif;
   color: #333;
 `;
 

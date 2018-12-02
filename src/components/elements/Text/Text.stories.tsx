@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs/react';
 
-import { infoConfig } from '../../utils/infoConfig';
+import { infoConfig } from '../../../utils/infoConfig';
 
 import { Text } from './Text';
 
