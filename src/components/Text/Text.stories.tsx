@@ -7,7 +7,7 @@ import { infoConfig } from '../../utils/infoConfig';
 
 import { Text } from './Text';
 
-const stories = storiesOf('Elements/Text', module);
+const stories = storiesOf('Elements|Text', module);
 stories.addParameters(infoConfig);
 
 stories
