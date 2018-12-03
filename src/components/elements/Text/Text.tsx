@@ -22,10 +22,21 @@ export const Text = ({
   truncate,
   ...rest
 }: Props) => {
-  let styles: React.CSSProperties = {
-    textDecoration: underline ? 'underline' : 'none',
-    textTransform: uppercase ? 'uppercase' : 'none',
-  };
+  let styles: React.CSSProperties = {};
+
+  if (underline) {
+    styles = {
+      ...styles,
+      textDecoration: 'underline',
+    };
+  }
+
+  if (uppercase) {
+    styles = {
+      ...styles,
+      textTransform: 'uppercase',
+    };
+  }
 
   if (truncate) {
     styles = {

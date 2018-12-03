@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text component should match default snapshot 1`] = `
+<div>
+  <p>
+    This is mocked text
+  </p>
+</div>
+`;
+
+exports[`Text component should match snapshot with truncated text 1`] = `
+<div>
+  <p
+    style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+  >
+    This is mocked text
+  </p>
+</div>
+`;
+
+exports[`Text component should match snapshot with underlined text 1`] = `
+<div>
+  <p
+    style="text-decoration: underline;"
+  >
+    This is mocked text
+  </p>
+</div>
+`;
+
+exports[`Text component should match snapshot with uppercased text 1`] = `
+<div>
+  <p
+    style="text-transform: uppercase;"
+  >
+    This is mocked text
+  </p>
+</div>
+`;

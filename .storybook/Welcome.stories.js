@@ -13,7 +13,7 @@ stories.add('to elementz-ui', () => (
   <div>
     <h1>Welcome to elementz-ui</h1>
     <p>
-      This is a component dev environment for the{' '}
+      This is a storybook environment for the{' '}
       <a href="http://github.com/savalazic/elementz-ui/" target="_blank">
         elementz-ui
       </a>
