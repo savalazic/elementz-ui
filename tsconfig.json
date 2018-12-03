@@ -4,6 +4,7 @@
     "module": "es2015",
     "target": "es2017",
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,

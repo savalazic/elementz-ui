@@ -17,6 +17,7 @@
     "build-storybook": "build-storybook -c .storybook -o docs"
   },
   "devDependencies": {
+    "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
     "@storybook/addon-actions": "^4.0.9",
@@ -37,11 +38,13 @@
     "coveralls": "^3.0.2",
     "husky": "^1.2.0",
     "jest": "^23.6.0",
+    "jest-dom": "^2.1.1",
     "lint-staged": "^8.1.0",
     "prettier": "^1.15.2",
     "react": "^16.6.3",
     "react-docgen-typescript-loader": "^3.0.0",
     "react-dom": "^16.6.3",
+    "react-testing-library": "^5.3.1",
     "rollup": "^0.67.3",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-node-resolve": "^3.4.0",

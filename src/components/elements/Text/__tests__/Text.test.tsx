@@ -1,13 +1,13 @@
-import { pureFunction } from '../Text';
+import 'jest-dom/extend-expect';
+import React from 'react';
+import { render } from 'react-testing-library';
 
-describe('pureFunction', () => {
-  it('should work', () => {
-    expect(pureFunction('test')).toEqual('test');
-  });
-});
+import { Text } from '../Text';
 
-describe('test test', () => {
-  it('should work', () => {
-    expect(true).toBe(true);
+describe('Text component', () => {
+  it('should render well', () => {
+    const txt = 'Test text';
+    const { container } = render(<Text>{txt}</Text>);
+    expect(container).toHaveTextContent(txt);
   });
 });
