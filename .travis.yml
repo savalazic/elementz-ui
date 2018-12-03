@@ -1,6 +1,13 @@
+env:
+  global:
+    secure: dZkkjFv4qKwD0yPkd4TtY+VgIdeKzJ+IL4iE/GNkOkCE0M5LnA7L5wYMHqSqGLrSUYNPDDbcXjbIOPqlATOceO72mBGstyE2YaiWelYZe7Bm+ojGm9IpuH5tOVl1yRCe6VH5FK5NrCGVLO8EA9/NOMR5kGDVQj0n9FuOKG5JWf+h43CcRqWaJxfe9hGIZBWP2EwZ+oJNRoH19t9wBqeM2Z4cwm6b1xDNj09aiTeLnTliGcpC2rjNbkxzdedfXb+E1hbpAQuUcjcIFBCi6zY+GD4kY3toFg9i4GKTyb81eF427ZyCZ5e7PoHWunNESjWgTkbNB7DQEejMZMjuwnG0ctXwz+RY/Q1tGWkfiA53Xu2ayfliDaQ2L4JTeiTiP693AAYt7XbQt8aC1FV5fWCS9+/mCnGXilBZb0zovmSAJq3XTIK2095Sed4V3nSxy3TlBDrcR2SHtIR5q4Tdi3Vgos3HUQKFu2ldLOx44KPADCpPnSMee2pEdjt4TJTwd1nrApbiy7cvgGkRv8qt98aEH6cAXyGVvAVtvioma6p813JsyPOEtWK15JXIKQ2CS+gAxeuGt918bitNmEw7t1vzJ2yis9PyWNzOcEuejQEPB57MIgCjOB4xtAEDcxCAMGaZB3984xt6vK4PAMghBOtsQDABfoAenxrIdsOOpogHcI4=
+
+branches:
+  only:
+    - master
 language: node_js
 node_js:
-  - 'stable'
+  - stable
 sudo: false
 cache:
   directories:
@@ -8,4 +15,13 @@ cache:
 before_install:
   - chmod +x ./scripts/build.sh
 script:
-  - ./scripts/build.sh
+  - './scripts/build.sh'
+after_success:
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  - git config user.name ${GIT_NAME}
+  - git config user.email ${GIT_EMAIL}
+  - git status
+  - git add -A
+  - git commit -m '[Deploy]'
+  - git push https://github.com/savalazic/elementz-ui.git master

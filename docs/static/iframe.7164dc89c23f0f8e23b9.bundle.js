@@ -1,5 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{432:function(t,n,e){"use strict";var o=e(0),r=e.n(o);const c=e(433).a.p`
-  font-family: sans-serif;
-  color: #333;
-`;n.a=(({text:t})=>r.a.createElement("div",null,r.a.createElement(c,null,t)))},436:function(t,n,e){e(166),e(437),t.exports=e(438)},438:function(t,n,e){"use strict";e.r(n),function(t){var n=e(164),o=e(451);Object(n.configure)(function(){o.keys().forEach(function(t){return o(t)})},t)}.call(this,e(265)(t))},451:function(t,n,e){var o={"./components/Text/Text.stories.tsx":452};function r(t){var n=c(t);return e(n)}function c(t){var n=o[t];if(!(n+1)){var e=new Error("Cannot find module '"+t+"'");throw e.code="MODULE_NOT_FOUND",e}return n}r.keys=function(){return Object.keys(o)},r.resolve=c,t.exports=r,r.id=451},452:function(t,n,e){"use strict";e.r(n),function(t){var n=e(0),o=e.n(n),r=e(164),c=e(432);Object(r.storiesOf)("Text",t).add("with text",()=>o.a.createElement(c.a,{text:"Test storybook"}))}.call(this,e(265)(t))}},[[436,2,4]]]);
-//# sourceMappingURL=iframe.7164dc89c23f0f8e23b9.bundle.js.map
