@@ -14,7 +14,7 @@ stories
   .add('default', () => {
     const txt = text(
       'Content',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,dicta!',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     );
     return <Text>{txt}</Text>;
   })
