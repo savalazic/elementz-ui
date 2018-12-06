@@ -14,6 +14,8 @@ cache:
     - node_modules
 before_install:
   - chmod +x ./scripts/build.sh
+before_script:
+  - git checkout master
 script:
   - './scripts/build.sh'
 after_success:
