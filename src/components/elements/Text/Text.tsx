@@ -1,11 +1,19 @@
 import React from 'react';
 
-export interface Props extends React.HTMLAttributes<any> {
+export enum TextTypeEnum {
+  p = 'p',
+  span = 'span',
+  strong = 'strong',
+  em = 'em',
+}
+
+export interface TextProps
+  extends React.HTMLProps<HTMLParagraphElement | HTMLSpanElement> {
   /** @default p */
   /** type of text */
   type?: 'p' | 'span' | 'strong' | 'em';
-  /** text content */
-  children: string;
+  /** content */
+  children: React.ReactNode;
   /** if text should be uppercased */
   uppercase?: boolean;
   /** if text should be underlined */
@@ -15,13 +23,13 @@ export interface Props extends React.HTMLAttributes<any> {
 }
 
 export const Text = ({
-  type: Type = 'p',
+  type: Type = TextTypeEnum.p,
   children,
   uppercase,
   underline,
   truncate,
   ...rest
-}: Props) => {
+}: TextProps) => {
   let styles: React.CSSProperties = {};
 
   if (underline) {

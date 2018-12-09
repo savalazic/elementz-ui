@@ -5,7 +5,7 @@ import { text } from '@storybook/addon-knobs/react';
 
 import { infoConfig } from '../../../utils/infoConfig';
 
-import { Text } from './Text';
+import { Text, TextTypeEnum } from './Text';
 
 const stories = storiesOf('Elements|Text', module);
 stories.addParameters(infoConfig);
@@ -23,21 +23,21 @@ stories
       'Content',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,dicta!',
     );
-    return <Text type="span">{txt}</Text>;
+    return <Text type={TextTypeEnum.span}>{txt}</Text>;
   })
   .add('bold', () => {
     const txt = text(
       'Content',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,dicta!',
     );
-    return <Text type="strong">{txt}</Text>;
+    return <Text type={TextTypeEnum.strong}>{txt}</Text>;
   })
   .add('italic', () => {
     const txt = text(
       'Content',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,dicta!',
     );
-    return <Text type="em">{txt}</Text>;
+    return <Text type={TextTypeEnum.em}>{txt}</Text>;
   })
   .add('uppercase', () => {
     const txt = text(
