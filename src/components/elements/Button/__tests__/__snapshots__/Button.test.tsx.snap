@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component should match default snapshot 1`] = `
+<div>
+  <button
+    style="font-size: 14px;"
+  >
+    Button
+  </button>
+</div>
+`;
+
+exports[`Button component should match snapshot with \`large\` size prop 1`] = `
+<div>
+  <button
+    style="font-size: 20px;"
+  >
+    Button
+  </button>
+</div>
+`;
+
+exports[`Button component should match snapshot with \`small\` size prop 1`] = `
+<div>
+  <button
+    style="font-size: 10px;"
+  >
+    Button
+  </button>
+</div>
+`;
