@@ -1,6 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
 
-export enum TextTypeEnum {
+import { truncateStyles } from '../../../utils/style-helpers';
+
+export enum TextTagEnum {
   p = 'p',
   span = 'span',
   strong = 'strong',
@@ -8,10 +11,11 @@ export enum TextTypeEnum {
 }
 
 export interface TextProps
-  extends React.HTMLProps<HTMLParagraphElement | HTMLSpanElement> {
+  extends React.HTMLAttributes<HTMLParagraphElement | HTMLSpanElement> {
+  // extends React.HTMLProps<HTMLParagraphElement | HTMLSpanElement> {
   /** @default p */
-  /** type of text */
-  type?: 'p' | 'span' | 'strong' | 'em';
+  /** tag of text */
+  tag?: 'p' | 'span' | 'strong' | 'em';
   /** content */
   children: React.ReactNode;
   /** if text should be uppercased */
@@ -19,47 +23,44 @@ export interface TextProps
   /** if text should be underlined */
   underline?: boolean;
   /** if text should be truncated... */
-  truncate?: boolean;
+  truncate?: string;
 }
 
+const StyledText = styled(
+  ({ tag = TextTagEnum.p, children, ...props }: TextProps) =>
+    React.createElement(tag, props, children),
+)`
+  text-decoration: ${(props: TextProps) => {
+    if (props.underline) {
+      return 'underline';
+    }
+    if (props.uppercase) {
+      return 'uppercase';
+    }
+    return;
+  }};
+
+  ${(props: TextProps) => props.truncate && truncateStyles(props.truncate)}
+`;
+
 export const Text = ({
-  type: Type = TextTypeEnum.p,
+  tag,
   children,
   uppercase,
   underline,
   truncate,
   ...rest
 }: TextProps) => {
-  let styles: React.CSSProperties = {};
-
-  if (underline) {
-    styles = {
-      ...styles,
-      textDecoration: 'underline',
-    };
-  }
-
-  if (uppercase) {
-    styles = {
-      ...styles,
-      textTransform: 'uppercase',
-    };
-  }
-
-  if (truncate) {
-    styles = {
-      ...styles,
-      display: 'block',
-      whiteSpace: 'nowrap',
-      overflow: 'hidden',
-      textOverflow: 'ellipsis',
-    };
-  }
-
   return (
-    <Type style={styles} {...rest}>
+    <StyledText
+      tag={tag}
+      uppercase={uppercase}
+      underline={underline}
+      truncate={truncate}
+      {...rest}
+    >
       {children}
-    </Type>
+    </StyledText>
   );
 };
 

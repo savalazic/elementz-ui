@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 export enum ButtonSizeEnum {
   normal = 'normal',
@@ -15,27 +16,42 @@ export interface ButtonProps
   children: React.ReactNode;
 }
 
+const StyledButton = styled.button`
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+
+  font-size: ${(props: ButtonProps) => {
+    if (props.size === ButtonSizeEnum.normal) {
+      return '14px';
+    }
+    if (props.size === ButtonSizeEnum.small) {
+      return '10px';
+    }
+    if (props.size === ButtonSizeEnum.large) {
+      return '20px';
+    }
+    return;
+  }};
+`;
+
 export const Button = ({
   children,
   size = ButtonSizeEnum.normal,
   ...rest
 }: ButtonProps) => {
-  let fontSize;
-
-  if (size === ButtonSizeEnum.normal) {
-    fontSize = 14;
-  }
-  if (size === ButtonSizeEnum.small) {
-    fontSize = 10;
-  }
-  if (size === ButtonSizeEnum.large) {
-    fontSize = 20;
-  }
-
   return (
-    <button style={{ fontSize }} {...rest}>
+    <StyledButton size={size} {...rest}>
       {children}
-    </button>
+    </StyledButton>
   );
 };
 
