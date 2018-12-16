@@ -10,9 +10,7 @@ export enum TextTagEnum {
   em = 'em',
 }
 
-export interface TextProps
-  extends React.HTMLAttributes<HTMLParagraphElement | HTMLSpanElement> {
-  // extends React.HTMLProps<HTMLParagraphElement | HTMLSpanElement> {
+export interface TextProps {
   /** @default p */
   /** tag of text */
   tag?: 'p' | 'span' | 'strong' | 'em';
@@ -26,34 +24,24 @@ export interface TextProps
   truncate?: string;
 }
 
-const StyledText = styled(
-  ({ tag = TextTagEnum.p, children, ...props }: TextProps) =>
-    React.createElement(tag, props, children),
-)`
-  text-decoration: ${(props: TextProps) => {
-    if (props.underline) {
-      return 'underline';
-    }
-    if (props.uppercase) {
-      return 'uppercase';
-    }
-    return;
-  }};
-
-  ${(props: TextProps) => props.truncate && truncateStyles(props.truncate)}
+const StyledText = styled.p<TextProps>`
+  text-decoration: ${props => props.underline && 'underline'};
+  text-transform: ${props => props.uppercase && 'uppercase'};
+  ${props => props.truncate && truncateStyles(props.truncate)};
 `;
 
 export const Text = ({
-  tag,
+  tag = TextTagEnum.p,
   children,
   uppercase,
   underline,
   truncate,
   ...rest
-}: TextProps) => {
+}: TextProps &
+  React.HTMLAttributes<HTMLParagraphElement | HTMLSpanElement>) => {
   return (
     <StyledText
-      tag={tag}
+      as={tag}
       uppercase={uppercase}
       underline={underline}
       truncate={truncate}

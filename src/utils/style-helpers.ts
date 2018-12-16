@@ -6,3 +6,10 @@ export const truncateStyles = (width: string) => {
     text-overflow: ellipsis;
   `;
 };
+
+export const setDimensions = (width: string, height: string) => {
+  return `
+    width: ${width};
+    height: ${height};
+  `;
+};

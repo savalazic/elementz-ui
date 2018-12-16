@@ -2,7 +2,7 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 
-import { infoConfig } from '../../../utils/infoConfig';
+import { infoConfig } from '../../../utils/info-config';
 
 import { Grid } from './Grid';
 

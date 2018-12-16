@@ -2,7 +2,9 @@
 
 exports[`Text component should match default snapshot 1`] = `
 <div>
-  <p>
+  <p
+    class="sc-bdVaJa hAuZMy"
+  >
     This is mocked text
   </p>
 </div>
@@ -11,7 +13,7 @@ exports[`Text component should match default snapshot 1`] = `
 exports[`Text component should match snapshot with truncated text 1`] = `
 <div>
   <p
-    style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+    class="sc-bdVaJa tTRQZ"
   >
     This is mocked text
   </p>
@@ -21,7 +23,7 @@ exports[`Text component should match snapshot with truncated text 1`] = `
 exports[`Text component should match snapshot with underlined text 1`] = `
 <div>
   <p
-    style="text-decoration: underline;"
+    class="sc-bdVaJa dfSOMa"
   >
     This is mocked text
   </p>
@@ -31,7 +33,7 @@ exports[`Text component should match snapshot with underlined text 1`] = `
 exports[`Text component should match snapshot with uppercased text 1`] = `
 <div>
   <p
-    style="text-transform: uppercase;"
+    class="sc-bdVaJa KxWHc"
   >
     This is mocked text
   </p>
