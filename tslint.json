@@ -11,6 +11,7 @@
     "ordered-imports": false,
     "interface-name": false,
     "object-literal-sort-keys": false,
-    "jsx-boolean-value": false
+    "jsx-boolean-value": false,
+    "ter-arrow-parens": false
   }
 }

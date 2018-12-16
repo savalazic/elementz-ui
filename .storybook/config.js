@@ -4,6 +4,8 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 import { withOptions } from '@storybook/addon-options';
 
+import { WrapperDecorator } from './WrapperDecorator';
+
 addDecorator(withInfo);
 addDecorator(
   withOptions({
@@ -11,9 +13,11 @@ addDecorator(
     url: 'https://github.com/savalazic/elementz-ui/',
     hierarchySeparator: /\//,
     hierarchyRootSeparator: /\|/,
+    addonPanelInRight: true,
   }),
 );
 addDecorator(withKnobs);
+addDecorator(WrapperDecorator);
 
 // automatically import all files ending in *.stories.tsx
 const req = require.context('../src', true, /.stories.tsx$/);

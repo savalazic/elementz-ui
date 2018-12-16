@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemeProvider should match default snapshot 1`] = `
+<div>
+  <div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsam voluptatibus expedita quo iure. Asperiores mollitia maiores voluptatum eum voluptate!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, sit.
+    </p>
+  </div>
+</div>
+`;

@@ -3,9 +3,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs/react';
 
-import { infoConfig } from '../../../utils/infoConfig';
+import { infoConfig } from '../../../utils/info-config';
 
-import { Text, TextTypeEnum } from './Text';
+import { Text, TextTagEnum } from './Text';
 
 const stories = storiesOf('Elements|Text', module);
 stories.addParameters(infoConfig);
@@ -23,21 +23,21 @@ stories
       'Content',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,dicta!',
     );
-    return <Text type={TextTypeEnum.span}>{txt}</Text>;
+    return <Text tag={TextTagEnum.span}>{txt}</Text>;
   })
   .add('bold', () => {
     const txt = text(
       'Content',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,dicta!',
     );
-    return <Text type={TextTypeEnum.strong}>{txt}</Text>;
+    return <Text tag={TextTagEnum.strong}>{txt}</Text>;
   })
   .add('italic', () => {
     const txt = text(
       'Content',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,dicta!',
     );
-    return <Text type={TextTypeEnum.em}>{txt}</Text>;
+    return <Text tag={TextTagEnum.em}>{txt}</Text>;
   })
   .add('uppercase', () => {
     const txt = text(
@@ -58,9 +58,16 @@ stories
       'Content',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,dicta!',
     );
+    return <Text truncate="250px">{txt}</Text>;
+  })
+  .add('truncate with wrapping element', () => {
+    const txt = text(
+      'Content',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,dicta!',
+    );
     return (
-      <div style={{ width: 150 }}>
-        <Text truncate>{txt}</Text>
+      <div style={{ width: '150px' }}>
+        <Text truncate="100%">{txt}</Text>
       </div>
     );
   });

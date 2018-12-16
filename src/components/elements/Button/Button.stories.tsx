@@ -1,12 +1,12 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import { text } from '@storybook/addon-knobs/react';
+import { text, boolean } from '@storybook/addon-knobs/react';
 import { action } from '@storybook/addon-actions';
 
-import { infoConfig } from '../../../utils/infoConfig';
+import { infoConfig } from '../../../utils/info-config';
 
-import { Button, ButtonSizeEnum } from './Button';
+import { Button, ButtonSizeEnum, ButtonTypeEnum } from './Button';
 
 const stories = storiesOf('Elements|Button', module);
 
@@ -30,6 +30,113 @@ stories
     return (
       <Button size={ButtonSizeEnum.small} onClick={action('onClick')}>
         {txt}
+      </Button>
+    );
+  })
+  .add('as anchor', () => {
+    const txt = text('Text', 'Button');
+    return (
+      <Button href="https://github.com/savalazic/elementz-ui" target="_blank">
+        {txt}
+      </Button>
+    );
+  })
+  .add('primary', () => {
+    const txt = text('Text', 'Button');
+    return (
+      <Button type={ButtonTypeEnum.primary} onClick={action('onClick')}>
+        {txt}
+      </Button>
+    );
+  })
+  .add('success', () => {
+    const txt = text('Text', 'Button');
+    return (
+      <Button type={ButtonTypeEnum.success} onClick={action('onClick')}>
+        {txt}
+      </Button>
+    );
+  })
+  .add('warning', () => {
+    const txt = text('Text', 'Button');
+    return (
+      <Button type={ButtonTypeEnum.warning} onClick={action('onClick')}>
+        {txt}
+      </Button>
+    );
+  })
+  .add('danger', () => {
+    const txt = text('Text', 'Button');
+    return (
+      <Button type={ButtonTypeEnum.danger} onClick={action('onClick')}>
+        {txt}
+      </Button>
+    );
+  })
+  .add('ghost primary', () => {
+    const txt = text('Text', 'Button');
+    return (
+      <Button ghost type={ButtonTypeEnum.primary} onClick={action('onClick')}>
+        {txt}
+      </Button>
+    );
+  })
+  .add('disabled', () => {
+    const txt = text('Text', 'Button');
+    return (
+      <Button
+        type={ButtonTypeEnum.primary}
+        onClick={action('onClick')}
+        disabled
+      >
+        {txt}
+      </Button>
+    );
+  })
+  .add('rounded', () => {
+    const txt = text('Text', 'Button');
+    return (
+      <Button rounded onClick={action('onClick')}>
+        {txt}
+      </Button>
+    );
+  })
+  .add('circle', () => {
+    const size = text('Size', '50px');
+    return (
+      <Button circle={size} onClick={action('onClick')}>
+        <span>👌🏻</span>
+      </Button>
+    );
+  })
+  .add('fluid', () => {
+    const txt = text('Text', 'Button');
+    return (
+      <Button fluid onClick={action('onClick')}>
+        {txt}
+      </Button>
+    );
+  })
+  .add('text', () => {
+    const txt = text('Text', 'Button');
+    return (
+      <Button text onClick={action('onClick')}>
+        {txt}
+      </Button>
+    );
+  })
+  .add('loading', () => {
+    const txt = text('Text', 'Button');
+    const isLoading = boolean('Is loading', true);
+    return (
+      <Button
+        type={ButtonTypeEnum.primary}
+        loading={isLoading}
+        onClick={action('onClick')}
+      >
+        {/* @TODO: implemenet loader, when loader component is ready */}
+        <span>load</span>
+        <span>{txt}</span>
       </Button>
     );
   });

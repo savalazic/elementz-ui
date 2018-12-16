@@ -23,7 +23,7 @@ describe('Text component', () => {
   });
 
   it('should match snapshot with truncated text', () => {
-    const { container } = render(<Text truncate>{txt}</Text>);
+    const { container } = render(<Text truncate="100px">{txt}</Text>);
     expect(container).toMatchSnapshot();
   });
 
