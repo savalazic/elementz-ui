@@ -1,4 +1,5 @@
 import 'jest-dom/extend-expect';
+import 'jest-styled-components';
 import React from 'react';
 import { fireEvent } from 'react-testing-library';
 
@@ -79,6 +80,14 @@ describe('Button component', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('should match have specific styles with `ghost` prop', () => {
+    const { container } = renderWithTheme(<Button ghost>{txt}</Button>);
+    expect(container.firstChild).toHaveStyleRule(
+      'background-color',
+      'transparent',
+    );
+  });
+
   it('should match snapshot with `disabled` prop', () => {
     const { container } = renderWithTheme(<Button disabled>{txt}</Button>);
     expect(container).toMatchSnapshot();
@@ -97,6 +106,11 @@ describe('Button component', () => {
   it('should match snapshot with `fluid` prop', () => {
     const { container } = renderWithTheme(<Button fluid>{txt}</Button>);
     expect(container).toMatchSnapshot();
+  });
+
+  it('should match have specific styles with `fluid` prop', () => {
+    const { container } = renderWithTheme(<Button fluid>{txt}</Button>);
+    expect(container.firstChild).toHaveStyleRule('width', '100%');
   });
 
   it('should match snapshot with `text` prop', () => {
