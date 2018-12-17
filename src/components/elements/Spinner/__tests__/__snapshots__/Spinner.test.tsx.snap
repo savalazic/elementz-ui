@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner component should match default snapshot 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa xgHQi"
+  >
+    <svg
+      class="sc-bwzfXH hPSsPt"
+      viewBox="25 25 50 50"
+    >
+      <circle
+        class="sc-htpNat gmVZZL"
+        cx="50"
+        cy="50"
+        fill="none"
+        r="20"
+        stroke-miterlimit="10"
+        stroke-width="2"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Spinner component should match snapshot custom stroke width 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa xgHQi"
+  >
+    <svg
+      class="sc-bwzfXH hPSsPt"
+      viewBox="25 25 50 50"
+    >
+      <circle
+        class="sc-htpNat dXYSBZ"
+        cx="50"
+        cy="50"
+        fill="none"
+        r="20"
+        stroke-miterlimit="10"
+        stroke-width="4"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Spinner component should match snapshot width custom color 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa xgHQi"
+  >
+    <svg
+      class="sc-bwzfXH hPSsPt"
+      viewBox="25 25 50 50"
+    >
+      <circle
+        class="sc-htpNat hHYMVt"
+        color="#333"
+        cx="50"
+        cy="50"
+        fill="none"
+        r="20"
+        stroke-miterlimit="10"
+        stroke-width="2"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Spinner component should match snapshot width custom size 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa xgHQi"
+  >
+    <svg
+      class="sc-bwzfXH hPSsPt"
+      viewBox="25 25 50 50"
+    >
+      <circle
+        class="sc-htpNat gmVZZL"
+        cx="50"
+        cy="50"
+        fill="none"
+        r="20"
+        stroke-miterlimit="10"
+        stroke-width="2"
+      />
+    </svg>
+  </div>
+</div>
+`;
