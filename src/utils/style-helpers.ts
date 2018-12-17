@@ -13,3 +13,13 @@ export const setDimensions = (width: string, height: string) => {
     height: ${height};
   `;
 };
+
+export const setAbsoluteCenter = (size: string) => {
+  return `
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -${parseFloat(size.replace(/\D/g, '')) / 2}px;
+    margin-left: -${parseFloat(size.replace(/\D/g, '')) / 2}px;
+  `;
+};
