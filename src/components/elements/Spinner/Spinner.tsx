@@ -4,10 +4,15 @@ import styled, { keyframes } from 'styled-components';
 export interface SpinnerProps {
   /** color */
   color?: string;
+  /** @default 50px */
   /** size */
   size?: string;
+  /** @default 2 */
   /** stroke width */
   strokeWidth?: number;
+  /** @default true */
+  /** visibility */
+  visible?: boolean;
 }
 
 export const rotate = keyframes`
@@ -32,6 +37,7 @@ export const dash = keyframes`
 `;
 
 const StyledSpinner = styled.div<SpinnerProps>`
+  display: ${props => !props.visible && 'none'};
   position: relative;
   width: ${props => props.size};
 
@@ -68,8 +74,9 @@ export const Spinner = ({
   color,
   size = '50px',
   strokeWidth = 2,
+  visible = true,
 }: SpinnerProps) => (
-  <StyledSpinner size={size}>
+  <StyledSpinner size={size} visible={visible}>
     <StyledCircular viewBox="25 25 50 50">
       <StyledPath
         color={color}

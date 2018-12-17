@@ -7,6 +7,7 @@ import { action } from '@storybook/addon-actions';
 import { infoConfig } from '../../../utils/info-config';
 
 import { Button, ButtonSizeEnum, ButtonTypeEnum } from './Button';
+import Spinner from '../Spinner';
 
 const stories = storiesOf('Elements|Button', module);
 
@@ -132,11 +133,11 @@ stories
       <Button
         type={ButtonTypeEnum.primary}
         loading={isLoading}
+        alignVertical
         onClick={action('onClick')}
       >
-        {/* @TODO: implemenet loader, when loader component is ready */}
-        <span>load</span>
-        <span>{txt}</span>
+        <Spinner visible={isLoading} size="15px" />
+        <span style={{ marginLeft: 5 }}>{txt}</span>
       </Button>
     );
   });

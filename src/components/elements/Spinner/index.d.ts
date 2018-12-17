@@ -1,1 +1,1 @@
-export { default, LoaderProps } from './Loader';
+export { default, SpinnerProps } from './Spinner';

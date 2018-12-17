@@ -3,7 +3,7 @@
 exports[`Button component should match default snapshot 1`] = `
 <div>
   <button
-    class="sc-bdVaJa bjJSUy"
+    class="sc-bdVaJa jrgQaI"
     type="default"
   >
     Button
@@ -11,10 +11,26 @@ exports[`Button component should match default snapshot 1`] = `
 </div>
 `;
 
+exports[`Button component should match snapshot with \`alignVerical\` prop 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa jlWHHE"
+    type="default"
+  >
+    <span>
+      Test
+    </span>
+    <span>
+      Button
+    </span>
+  </button>
+</div>
+`;
+
 exports[`Button component should match snapshot with \`circle\` prop 1`] = `
 <div>
   <button
-    class="sc-bdVaJa jAQLPP"
+    class="sc-bdVaJa exEqzL"
     type="default"
   >
     Button
@@ -25,7 +41,7 @@ exports[`Button component should match snapshot with \`circle\` prop 1`] = `
 exports[`Button component should match snapshot with \`danger\` type prop 1`] = `
 <div>
   <button
-    class="sc-bdVaJa gatZlT"
+    class="sc-bdVaJa cpqvrn"
     type="danger"
   >
     Button
@@ -36,7 +52,7 @@ exports[`Button component should match snapshot with \`danger\` type prop 1`] = 
 exports[`Button component should match snapshot with \`disabled\` prop 1`] = `
 <div>
   <button
-    class="sc-bdVaJa kftAjE"
+    class="sc-bdVaJa etCVzB"
     disabled=""
     type="default"
   >
@@ -48,7 +64,7 @@ exports[`Button component should match snapshot with \`disabled\` prop 1`] = `
 exports[`Button component should match snapshot with \`fluid\` prop 1`] = `
 <div>
   <button
-    class="sc-bdVaJa edVJkR"
+    class="sc-bdVaJa kVIoig"
     type="default"
   >
     Button
@@ -59,7 +75,7 @@ exports[`Button component should match snapshot with \`fluid\` prop 1`] = `
 exports[`Button component should match snapshot with \`ghost\` prop 1`] = `
 <div>
   <button
-    class="sc-bdVaJa gkWwkV"
+    class="sc-bdVaJa hxfXVx"
     type="default"
   >
     Button
@@ -70,7 +86,7 @@ exports[`Button component should match snapshot with \`ghost\` prop 1`] = `
 exports[`Button component should match snapshot with \`href\` prop 1`] = `
 <div>
   <a
-    class="sc-bdVaJa bjJSUy"
+    class="sc-bdVaJa jrgQaI"
     href="https://github.com/savalazic/elementz-ui"
     type="default"
   >
@@ -82,7 +98,7 @@ exports[`Button component should match snapshot with \`href\` prop 1`] = `
 exports[`Button component should match snapshot with \`large\` size prop 1`] = `
 <div>
   <button
-    class="sc-bdVaJa dTJWdZ"
+    class="sc-bdVaJa cwcmxG"
     type="default"
   >
     Button
@@ -93,7 +109,7 @@ exports[`Button component should match snapshot with \`large\` size prop 1`] = `
 exports[`Button component should match snapshot with \`loading\` prop 1`] = `
 <div>
   <button
-    class="sc-bdVaJa kftAjE"
+    class="sc-bdVaJa etCVzB"
     type="default"
   >
     Button
@@ -104,7 +120,7 @@ exports[`Button component should match snapshot with \`loading\` prop 1`] = `
 exports[`Button component should match snapshot with \`primary\` type prop 1`] = `
 <div>
   <button
-    class="sc-bdVaJa Fntns"
+    class="sc-bdVaJa eSfKag"
     type="primary"
   >
     Button
@@ -115,7 +131,7 @@ exports[`Button component should match snapshot with \`primary\` type prop 1`] =
 exports[`Button component should match snapshot with \`rounded\` prop 1`] = `
 <div>
   <button
-    class="sc-bdVaJa BSgVZ"
+    class="sc-bdVaJa ivafBX"
     type="default"
   >
     Button
@@ -126,7 +142,7 @@ exports[`Button component should match snapshot with \`rounded\` prop 1`] = `
 exports[`Button component should match snapshot with \`small\` size prop 1`] = `
 <div>
   <button
-    class="sc-bdVaJa dEevcN"
+    class="sc-bdVaJa gsCNgb"
     type="default"
   >
     Button
@@ -137,7 +153,7 @@ exports[`Button component should match snapshot with \`small\` size prop 1`] = `
 exports[`Button component should match snapshot with \`success\` type prop 1`] = `
 <div>
   <button
-    class="sc-bdVaJa iVmyEF"
+    class="sc-bdVaJa eLlhRs"
     type="success"
   >
     Button
@@ -148,7 +164,7 @@ exports[`Button component should match snapshot with \`success\` type prop 1`] =
 exports[`Button component should match snapshot with \`text\` prop 1`] = `
 <div>
   <button
-    class="sc-bdVaJa ekilkN"
+    class="sc-bdVaJa ikQCgo"
     type="default"
   >
     Button
@@ -159,7 +175,7 @@ exports[`Button component should match snapshot with \`text\` prop 1`] = `
 exports[`Button component should match snapshot with \`warning\` type prop 1`] = `
 <div>
   <button
-    class="sc-bdVaJa fvUWve"
+    class="sc-bdVaJa jhwXWS"
     type="warning"
   >
     Button

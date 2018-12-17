@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { darken, lighten } from 'polished';
 
-import { setDimensions } from '../../../utils/style-helpers';
+import { setDimensions, alignVertical } from '../../../utils/style-helpers';
 import { getButtonColor } from './buttonHelpers';
 
 export enum ButtonSizeEnum {
@@ -37,6 +37,8 @@ export interface ButtonProps {
   text?: boolean;
   /** loading */
   loading?: boolean;
+  /** align vertical - used if button has more elements */
+  alignVertical?: boolean;
   /** href link */
   href?: any;
   /** content */
@@ -46,7 +48,7 @@ export interface ButtonProps {
 const StyledButton = styled.button<ButtonProps>`
   border: none;
   margin: 0;
-  padding: 8px 20px;
+  padding: 8px 15px;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -79,6 +81,8 @@ const StyledButton = styled.button<ButtonProps>`
   border-radius: ${props => props.circle && '50%'};
 
   width: ${props => props.fluid && '100%'};
+
+  ${props => props.alignVertical && alignVertical()}
 
   ${props => props.circle && setDimensions(props.circle, props.circle)}
   padding: ${props => props.circle && '0px'};
@@ -139,6 +143,7 @@ export const Button = ({
   disabled,
   text,
   loading,
+  alignVertical: align,
   size = ButtonSizeEnum.normal,
   ...rest
 }: ButtonProps &
@@ -157,6 +162,7 @@ export const Button = ({
       disabled={disabled}
       text={text}
       loading={loading}
+      alignVertical={align}
       {...rest}
     >
       {children}

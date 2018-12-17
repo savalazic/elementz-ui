@@ -23,3 +23,11 @@ export const setAbsoluteCenter = (size: string) => {
     margin-left: -${parseFloat(size.replace(/\D/g, '')) / 2}px;
   `;
 };
+
+export const alignVertical = () => {
+  return `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `;
+};

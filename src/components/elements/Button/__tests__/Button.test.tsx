@@ -108,4 +108,14 @@ describe('Button component', () => {
     const { container } = renderWithTheme(<Button loading>{txt}</Button>);
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot with `alignVerical` prop', () => {
+    const { container } = renderWithTheme(
+      <Button alignVertical>
+        <span>Test</span>
+        <span>{txt}</span>
+      </Button>,
+    );
+    expect(container).toMatchSnapshot();
+  });
 });
