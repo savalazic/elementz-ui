@@ -7,7 +7,7 @@ import { action } from '@storybook/addon-actions';
 import { infoConfig } from '../../../utils/info-config';
 
 import { Button, ButtonSizeEnum, ButtonTypeEnum } from './Button';
-import Spinner from '../Spinner';
+import { Spinner } from '../Spinner';
 
 const stories = storiesOf('Elements|Button', module);
 

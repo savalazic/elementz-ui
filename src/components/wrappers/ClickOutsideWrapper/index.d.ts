@@ -1,1 +1,1 @@
-export { default, ClickOutsideWrapperProps } from './ClickOutsideWrapper';
+export { ClickOutsideWrapperProps } from './ClickOutsideWrapper';

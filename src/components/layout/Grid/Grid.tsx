@@ -12,5 +12,3 @@ export const Grid = ({ test }: Props) => {
     </div>
   );
 };
-
-export default Grid;

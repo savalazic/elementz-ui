@@ -28,5 +28,3 @@ export const ThemeProvider = ({
     <React.Fragment>{children}</React.Fragment>
   </StyledThemeProvider>
 );
-
-export default ThemeProvider;

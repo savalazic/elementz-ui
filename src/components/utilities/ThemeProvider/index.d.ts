@@ -1,1 +1,1 @@
-export { default, ThemeProps } from './ThemeProvider';
+export { ThemeProps } from './ThemeProvider';
