@@ -1,2 +1,2 @@
-export { default as ClickOutsideWrapper } from './ClickOutsideWrapper';
+export { ClickOutsideWrapper } from './ClickOutsideWrapper';
 export { LoadingWrapper } from './LoadingWrapper';

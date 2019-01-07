@@ -30,5 +30,3 @@ export class ClickOutsideWrapper extends PureComponent<
     return <div ref={this.wrapperRef}>{children}</div>;
   }
 }
-
-export default ClickOutsideWrapper;

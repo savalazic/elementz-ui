@@ -51,5 +51,3 @@ export const Text = ({
     </StyledText>
   );
 };
-
-export default Text;

@@ -1,1 +1,1 @@
-export { default } from './ClickOutsideWrapper';
+export { ClickOutsideWrapper } from './ClickOutsideWrapper';

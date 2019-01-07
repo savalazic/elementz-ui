@@ -1,3 +1,3 @@
-export { default as Text } from './Text';
-export { default as Button } from './Button';
-export { default as Spinner } from './Spinner';
+export { Text } from './Text';
+export { Button } from './Button';
+export { Spinner } from './Spinner';

@@ -90,5 +90,3 @@ export const Spinner = ({
     </StyledCircular>
   </StyledSpinner>
 );
-
-export default Spinner;
