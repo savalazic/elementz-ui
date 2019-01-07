@@ -12,6 +12,7 @@
     "interface-name": false,
     "object-literal-sort-keys": false,
     "jsx-boolean-value": false,
-    "ter-arrow-parens": false
+    "ter-arrow-parens": false,
+    "semicolon": [true, "always", "ignore-bound-class-methods"]
   }
 }

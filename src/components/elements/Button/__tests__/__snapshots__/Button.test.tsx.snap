@@ -1,9 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button component should match default snapshot 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  color: black;
+  background-color: #e1e1e1;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #c8c8c8;
+}
+
+.c0:focus {
+  background-color: #eee;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa jrgQaI"
+    class="c0"
     type="default"
   >
     Button
@@ -12,9 +50,59 @@ exports[`Button component should match default snapshot 1`] = `
 `;
 
 exports[`Button component should match snapshot with \`alignVerical\` prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  color: black;
+  background-color: #e1e1e1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #c8c8c8;
+}
+
+.c0:focus {
+  background-color: #eee;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa jlWHHE"
+    class="c0"
     type="default"
   >
     <span>
@@ -28,9 +116,52 @@ exports[`Button component should match snapshot with \`alignVerical\` prop 1`] =
 `;
 
 exports[`Button component should match snapshot with \`circle\` prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  color: black;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  line-height: 100%;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #c8c8c8;
+}
+
+.c0:focus {
+  background-color: #eee;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa exEqzL"
+    class="c0"
     type="default"
   >
     Button
@@ -39,9 +170,46 @@ exports[`Button component should match snapshot with \`circle\` prop 1`] = `
 `;
 
 exports[`Button component should match snapshot with \`danger\` type prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  background-color: #f56c6c;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #f23c3c;
+}
+
+.c0:focus {
+  background-color: #f78484;
+}
+
+.c0:active {
+  background-color: #f23c3c;
+}
+
 <div>
   <button
-    class="sc-bdVaJa cpqvrn"
+    class="c0"
     type="danger"
   >
     Button
@@ -50,9 +218,49 @@ exports[`Button component should match snapshot with \`danger\` type prop 1`] = 
 `;
 
 exports[`Button component should match snapshot with \`disabled\` prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  color: black;
+  background-color: #e1e1e1;
+  opacity: 0.7;
+  font-size: 14px;
+  pointer-events: none;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #c8c8c8;
+}
+
+.c0:focus {
+  background-color: #eee;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa etCVzB"
+    class="c0"
     disabled=""
     type="default"
   >
@@ -62,9 +270,48 @@ exports[`Button component should match snapshot with \`disabled\` prop 1`] = `
 `;
 
 exports[`Button component should match snapshot with \`fluid\` prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  color: black;
+  background-color: #e1e1e1;
+  width: 100%;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #c8c8c8;
+}
+
+.c0:focus {
+  background-color: #eee;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa kVIoig"
+    class="c0"
     type="default"
   >
     Button
@@ -73,9 +320,51 @@ exports[`Button component should match snapshot with \`fluid\` prop 1`] = `
 `;
 
 exports[`Button component should match snapshot with \`ghost\` prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: #e1e1e1;
+  background-color: #e1e1e1;
+  background-color: transparent;
+  border: 1px solid #e1e1e1;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #e1e1e1;
+  color: white;
+}
+
+.c0:focus {
+  background-color: #eee;
+  color: white;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+  color: white;
+}
+
 <div>
   <button
-    class="sc-bdVaJa hxfXVx"
+    class="c0"
     type="default"
   >
     Button
@@ -84,9 +373,47 @@ exports[`Button component should match snapshot with \`ghost\` prop 1`] = `
 `;
 
 exports[`Button component should match snapshot with \`href\` prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  color: black;
+  background-color: #e1e1e1;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #c8c8c8;
+}
+
+.c0:focus {
+  background-color: #eee;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+}
+
 <div>
   <a
-    class="sc-bdVaJa jrgQaI"
+    class="c0"
     href="https://github.com/savalazic/elementz-ui"
     type="default"
   >
@@ -96,9 +423,47 @@ exports[`Button component should match snapshot with \`href\` prop 1`] = `
 `;
 
 exports[`Button component should match snapshot with \`large\` size prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  color: black;
+  background-color: #e1e1e1;
+  font-size: 20px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #c8c8c8;
+}
+
+.c0:focus {
+  background-color: #eee;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa cwcmxG"
+    class="c0"
     type="default"
   >
     Button
@@ -107,9 +472,49 @@ exports[`Button component should match snapshot with \`large\` size prop 1`] = `
 `;
 
 exports[`Button component should match snapshot with \`loading\` prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  color: black;
+  background-color: #e1e1e1;
+  opacity: 0.7;
+  font-size: 14px;
+  pointer-events: none;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #c8c8c8;
+}
+
+.c0:focus {
+  background-color: #eee;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa etCVzB"
+    class="c0"
     type="default"
   >
     Button
@@ -118,9 +523,46 @@ exports[`Button component should match snapshot with \`loading\` prop 1`] = `
 `;
 
 exports[`Button component should match snapshot with \`primary\` type prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  background-color: #409eff;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #0d84ff;
+}
+
+.c0:focus {
+  background-color: #5aabff;
+}
+
+.c0:active {
+  background-color: #0d84ff;
+}
+
 <div>
   <button
-    class="sc-bdVaJa eSfKag"
+    class="c0"
     type="primary"
   >
     Button
@@ -129,9 +571,48 @@ exports[`Button component should match snapshot with \`primary\` type prop 1`] =
 `;
 
 exports[`Button component should match snapshot with \`rounded\` prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  color: black;
+  background-color: #e1e1e1;
+  border-radius: 20px;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #c8c8c8;
+}
+
+.c0:focus {
+  background-color: #eee;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa ivafBX"
+    class="c0"
     type="default"
   >
     Button
@@ -140,9 +621,47 @@ exports[`Button component should match snapshot with \`rounded\` prop 1`] = `
 `;
 
 exports[`Button component should match snapshot with \`small\` size prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  color: black;
+  background-color: #e1e1e1;
+  font-size: 10px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #c8c8c8;
+}
+
+.c0:focus {
+  background-color: #eee;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa gsCNgb"
+    class="c0"
     type="default"
   >
     Button
@@ -151,9 +670,46 @@ exports[`Button component should match snapshot with \`small\` size prop 1`] = `
 `;
 
 exports[`Button component should match snapshot with \`success\` type prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  background-color: #67c23a;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #529b2e;
+}
+
+.c0:focus {
+  background-color: #76c94c;
+}
+
+.c0:active {
+  background-color: #529b2e;
+}
+
 <div>
   <button
-    class="sc-bdVaJa eLlhRs"
+    class="c0"
     type="success"
   >
     Button
@@ -162,9 +718,55 @@ exports[`Button component should match snapshot with \`success\` type prop 1`] =
 `;
 
 exports[`Button component should match snapshot with \`text\` prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  color: black;
+  color: #409eff;
+  background-color: #e1e1e1;
+  background-color: transparent;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #c8c8c8;
+  background-color: transparent;
+  color: #0d84ff;
+}
+
+.c0:focus {
+  background-color: #eee;
+  background-color: transparent;
+  color: #5aabff;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+  background-color: transparent;
+  color: #5aabff;
+}
+
 <div>
   <button
-    class="sc-bdVaJa ikQCgo"
+    class="c0"
     type="default"
   >
     Button
@@ -173,9 +775,46 @@ exports[`Button component should match snapshot with \`text\` prop 1`] = `
 `;
 
 exports[`Button component should match snapshot with \`warning\` type prop 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 8px 15px;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  background-color: #e6a23c;
+  font-size: 14px;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+}
+
+.c0:hover {
+  background-color: #d48a1b;
+}
+
+.c0:focus {
+  background-color: #e9ad53;
+}
+
+.c0:active {
+  background-color: #d48a1b;
+}
+
 <div>
   <button
-    class="sc-bdVaJa jhwXWS"
+    class="c0"
     type="warning"
   >
     Button
