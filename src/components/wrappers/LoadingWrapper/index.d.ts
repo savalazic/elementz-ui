@@ -1,1 +1,1 @@
-export { default, LoadingWrapperProps } from './LoadingWrapper';
+export { LoadingWrapperProps } from './LoadingWrapper';

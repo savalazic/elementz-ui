@@ -1,1 +1,1 @@
-export { default } from './LoadingWrapper';
+export { LoadingWrapper } from './LoadingWrapper';
