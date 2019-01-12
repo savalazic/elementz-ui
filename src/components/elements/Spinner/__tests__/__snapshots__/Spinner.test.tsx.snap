@@ -3,138 +3,32 @@
 exports[`Spinner component should match default snapshot 1`] = `
 <div>
   <div
-    class="sc-bdVaJa ehxNQF"
-  >
-    <svg
-      class="sc-bwzfXH hPSsPt"
-      viewBox="25 25 50 50"
-    >
-      <circle
-        class="sc-htpNat gmVZZL"
-        cx="50"
-        cy="50"
-        fill="none"
-        r="20"
-        stroke-miterlimit="10"
-        stroke-width="2"
-      />
-    </svg>
-  </div>
+    class="sc-bdVaJa jbEdkI"
+  />
 </div>
 `;
 
-exports[`Spinner component should match snapshot with \`visible\` prop 1`] = `
+exports[`Spinner component should match snapshot with custom border width 1`] = `
 <div>
   <div
-    class="sc-bdVaJa fKppMb"
-  >
-    <svg
-      class="sc-bwzfXH hPSsPt"
-      viewBox="25 25 50 50"
-    >
-      <circle
-        class="sc-htpNat gmVZZL"
-        cx="50"
-        cy="50"
-        fill="none"
-        r="20"
-        stroke-miterlimit="10"
-        stroke-width="2"
-      />
-    </svg>
-  </div>
-</div>
-`;
-
-exports[`Spinner component should match snapshot with custom stroke width 1`] = `
-<div>
-  <div
-    class="sc-bdVaJa ehxNQF"
-  >
-    <svg
-      class="sc-bwzfXH hPSsPt"
-      viewBox="25 25 50 50"
-    >
-      <circle
-        class="sc-htpNat dXYSBZ"
-        cx="50"
-        cy="50"
-        fill="none"
-        r="20"
-        stroke-miterlimit="10"
-        stroke-width="4"
-      />
-    </svg>
-  </div>
-</div>
-`;
-
-exports[`Spinner component should match snapshot with custom stroke width 2`] = `
-<div>
-  <div
-    class="sc-bdVaJa ehxNQF"
-  >
-    <svg
-      class="sc-bwzfXH hPSsPt"
-      viewBox="25 25 50 50"
-    >
-      <circle
-        class="sc-htpNat dXYSBZ"
-        cx="50"
-        cy="50"
-        fill="none"
-        r="20"
-        stroke-miterlimit="10"
-        stroke-width="4"
-      />
-    </svg>
-  </div>
+    class="sc-bdVaJa fcBMdT"
+  />
 </div>
 `;
 
 exports[`Spinner component should match snapshot with width custom color 1`] = `
 <div>
   <div
-    class="sc-bdVaJa ehxNQF"
-  >
-    <svg
-      class="sc-bwzfXH hPSsPt"
-      viewBox="25 25 50 50"
-    >
-      <circle
-        class="sc-htpNat hHYMVt"
-        color="#333"
-        cx="50"
-        cy="50"
-        fill="none"
-        r="20"
-        stroke-miterlimit="10"
-        stroke-width="2"
-      />
-    </svg>
-  </div>
+    class="sc-bdVaJa bgVcLw"
+    color="#333"
+  />
 </div>
 `;
 
 exports[`Spinner component should match snapshot with width custom size 1`] = `
 <div>
   <div
-    class="sc-bdVaJa ehxNQF"
-  >
-    <svg
-      class="sc-bwzfXH hPSsPt"
-      viewBox="25 25 50 50"
-    >
-      <circle
-        class="sc-htpNat gmVZZL"
-        cx="50"
-        cy="50"
-        fill="none"
-        r="20"
-        stroke-miterlimit="10"
-        stroke-width="2"
-      />
-    </svg>
-  </div>
+    class="sc-bdVaJa jbEdkI"
+  />
 </div>
 `;

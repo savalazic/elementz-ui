@@ -20,18 +20,8 @@ describe('Spinner component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should match snapshot with custom stroke width', () => {
-    const { container } = render(<Spinner strokeWidth={4} />);
-    expect(container).toMatchSnapshot();
-  });
-
-  it('should match snapshot with custom stroke width', () => {
-    const { container } = render(<Spinner strokeWidth={4} />);
-    expect(container).toMatchSnapshot();
-  });
-
-  it('should match snapshot with `visible` prop', () => {
-    const { container } = render(<Spinner visible={false} />);
+  it('should match snapshot with custom border width', () => {
+    const { container } = render(<Spinner borderWidth="6px" />);
     expect(container).toMatchSnapshot();
   });
 });
