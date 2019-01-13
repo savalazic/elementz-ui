@@ -3,8 +3,24 @@ import 'jest-styled-components';
 import React from 'react';
 import { fireEvent } from 'react-testing-library';
 
-import { Button } from '../Button';
+import { Button, LoadingButton } from '../Button';
 import { renderWithTheme } from '../../../../utils/test-helpers';
+
+describe('LoadingButton component', () => {
+  const txt = 'Loading Button';
+
+  it('should match default snapshot', () => {
+    const { container } = renderWithTheme(<LoadingButton>{txt}</LoadingButton>);
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match default snapshot with isLoading flag', () => {
+    const { container } = renderWithTheme(
+      <LoadingButton isLoading>{txt}</LoadingButton>,
+    );
+    expect(container).toMatchSnapshot();
+  });
+});
 
 describe('Button component', () => {
   const txt = 'Button';
@@ -115,11 +131,6 @@ describe('Button component', () => {
 
   it('should match snapshot with `text` prop', () => {
     const { container } = renderWithTheme(<Button text>{txt}</Button>);
-    expect(container).toMatchSnapshot();
-  });
-
-  it('should match snapshot with `loading` prop', () => {
-    const { container } = renderWithTheme(<Button loading>{txt}</Button>);
     expect(container).toMatchSnapshot();
   });
 

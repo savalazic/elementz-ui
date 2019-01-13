@@ -31,3 +31,10 @@ export const alignVertical = () => {
     justify-content: center;
   `;
 };
+
+export const setDisabled = () => {
+  return `
+    opacity: 0.7;
+    pointer-events: none;
+  `;
+};

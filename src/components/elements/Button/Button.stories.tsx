@@ -6,7 +6,12 @@ import { action } from '@storybook/addon-actions';
 
 import { infoConfig } from '../../../utils/info-config';
 
-import { Button, ButtonSizeEnum, ButtonTypeEnum } from './Button';
+import {
+  Button,
+  ButtonSizeEnum,
+  ButtonTypeEnum,
+  LoadingButton,
+} from './Button';
 import { Spinner } from '../Spinner';
 
 const stories = storiesOf('Elements|Button', module);
@@ -128,16 +133,15 @@ stories
   })
   .add('loading', () => {
     const txt = text('Text', 'Button');
-    const isLoading = boolean('Is loading', true);
+    const loading = boolean('Is loading', true);
     return (
-      <Button
+      <LoadingButton
+        isLoading={loading}
         type={ButtonTypeEnum.primary}
-        loading={isLoading}
         alignVertical
         onClick={action('onClick')}
       >
-        <Spinner visible={isLoading} size="15px" />
-        <span style={{ marginLeft: 5 }}>{txt}</span>
-      </Button>
+        {txt}
+      </LoadingButton>
     );
   });
