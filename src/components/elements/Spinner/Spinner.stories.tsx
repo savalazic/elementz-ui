@@ -18,8 +18,8 @@ stories
     return <Spinner size="200px" />;
   })
   .add('with custom color', () => {
-    return <Spinner color="#409eff" />;
+    return <Spinner color="#f50" />;
   })
-  .add('with custom stroke width', () => {
-    return <Spinner strokeWidth={6} />;
+  .add('with custom border width', () => {
+    return <Spinner borderWidth="6px" />;
   });

@@ -4,7 +4,7 @@ exports[`Button component should match default snapshot 1`] = `
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -19,10 +19,11 @@ exports[`Button component should match default snapshot 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   color: black;
   background-color: #e1e1e1;
-  font-size: 14px;
+  font-size: 1rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -53,7 +54,7 @@ exports[`Button component should match snapshot with \`alignVerical\` prop 1`] =
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -68,6 +69,7 @@ exports[`Button component should match snapshot with \`alignVerical\` prop 1`] =
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   color: black;
   background-color: #e1e1e1;
@@ -83,7 +85,7 @@ exports[`Button component should match snapshot with \`alignVerical\` prop 1`] =
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 1rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -119,7 +121,7 @@ exports[`Button component should match snapshot with \`circle\` prop 1`] = `
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -134,6 +136,7 @@ exports[`Button component should match snapshot with \`circle\` prop 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   color: black;
   background-color: #e1e1e1;
@@ -142,7 +145,7 @@ exports[`Button component should match snapshot with \`circle\` prop 1`] = `
   height: 50px;
   padding: 0px;
   line-height: 100%;
-  font-size: 14px;
+  font-size: 1rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -173,7 +176,7 @@ exports[`Button component should match snapshot with \`danger\` type prop 1`] = 
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -188,9 +191,10 @@ exports[`Button component should match snapshot with \`danger\` type prop 1`] = 
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   background-color: #f56c6c;
-  font-size: 14px;
+  font-size: 1rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -221,7 +225,7 @@ exports[`Button component should match snapshot with \`disabled\` prop 1`] = `
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -236,12 +240,13 @@ exports[`Button component should match snapshot with \`disabled\` prop 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   color: black;
   background-color: #e1e1e1;
   opacity: 0.7;
-  font-size: 14px;
   pointer-events: none;
+  font-size: 1rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -273,7 +278,7 @@ exports[`Button component should match snapshot with \`fluid\` prop 1`] = `
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -288,11 +293,12 @@ exports[`Button component should match snapshot with \`fluid\` prop 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   color: black;
   background-color: #e1e1e1;
   width: 100%;
-  font-size: 14px;
+  font-size: 1rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -323,7 +329,7 @@ exports[`Button component should match snapshot with \`ghost\` prop 1`] = `
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -338,11 +344,12 @@ exports[`Button component should match snapshot with \`ghost\` prop 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: #e1e1e1;
   background-color: #e1e1e1;
   background-color: transparent;
   border: 1px solid #e1e1e1;
-  font-size: 14px;
+  font-size: 1rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -376,7 +383,7 @@ exports[`Button component should match snapshot with \`href\` prop 1`] = `
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -391,10 +398,11 @@ exports[`Button component should match snapshot with \`href\` prop 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   color: black;
   background-color: #e1e1e1;
-  font-size: 14px;
+  font-size: 1rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -426,7 +434,7 @@ exports[`Button component should match snapshot with \`large\` size prop 1`] = `
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -441,61 +449,11 @@ exports[`Button component should match snapshot with \`large\` size prop 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   color: black;
   background-color: #e1e1e1;
-  font-size: 20px;
-  -webkit-transition: background-color 200ms,color 200ms;
-  transition: background-color 200ms,color 200ms;
-}
-
-.c0:hover {
-  background-color: #c8c8c8;
-}
-
-.c0:focus {
-  background-color: #eee;
-}
-
-.c0:active {
-  background-color: #c8c8c8;
-}
-
-<div>
-  <button
-    class="c0"
-    type="default"
-  >
-    Button
-  </button>
-</div>
-`;
-
-exports[`Button component should match snapshot with \`loading\` prop 1`] = `
-.c0 {
-  border: none;
-  margin: 0;
-  padding: 8px 15px;
-  width: auto;
-  overflow: visible;
-  font: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-align: center;
-  line-height: inherit;
-  -webkit-appearance: none;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  color: white;
-  color: black;
-  background-color: #e1e1e1;
-  opacity: 0.7;
-  font-size: 14px;
-  pointer-events: none;
+  font-size: 1.2rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -526,7 +484,7 @@ exports[`Button component should match snapshot with \`primary\` type prop 1`] =
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -541,9 +499,10 @@ exports[`Button component should match snapshot with \`primary\` type prop 1`] =
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   background-color: #409eff;
-  font-size: 14px;
+  font-size: 1rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -574,7 +533,7 @@ exports[`Button component should match snapshot with \`rounded\` prop 1`] = `
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -589,11 +548,12 @@ exports[`Button component should match snapshot with \`rounded\` prop 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   color: black;
   background-color: #e1e1e1;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 1rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -624,7 +584,7 @@ exports[`Button component should match snapshot with \`small\` size prop 1`] = `
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -639,10 +599,11 @@ exports[`Button component should match snapshot with \`small\` size prop 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   color: black;
   background-color: #e1e1e1;
-  font-size: 10px;
+  font-size: 0.8rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -673,7 +634,7 @@ exports[`Button component should match snapshot with \`success\` type prop 1`] =
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -688,9 +649,10 @@ exports[`Button component should match snapshot with \`success\` type prop 1`] =
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   background-color: #67c23a;
-  font-size: 14px;
+  font-size: 1rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -721,7 +683,7 @@ exports[`Button component should match snapshot with \`text\` prop 1`] = `
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -736,12 +698,13 @@ exports[`Button component should match snapshot with \`text\` prop 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   color: black;
   color: #409eff;
   background-color: #e1e1e1;
   background-color: transparent;
-  font-size: 14px;
+  font-size: 1rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -778,7 +741,7 @@ exports[`Button component should match snapshot with \`warning\` type prop 1`] =
 .c0 {
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -793,9 +756,10 @@ exports[`Button component should match snapshot with \`warning\` type prop 1`] =
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
   color: white;
   background-color: #e6a23c;
-  font-size: 14px;
+  font-size: 1rem;
   -webkit-transition: background-color 200ms,color 200ms;
   transition: background-color 200ms,color 200ms;
 }
@@ -818,6 +782,118 @@ exports[`Button component should match snapshot with \`warning\` type prop 1`] =
     type="warning"
   >
     Button
+  </button>
+</div>
+`;
+
+exports[`LoadingButton component should match default snapshot 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 0.6em 1.3em 0.6em;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  background-color: #e1e1e1;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+  overflow: hidden;
+}
+
+.c0:hover {
+  background-color: #c8c8c8;
+}
+
+.c0:focus {
+  background-color: #eee;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <span>
+      Loading Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`LoadingButton component should match default snapshot with isLoading flag 1`] = `
+.c1 {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #eee;
+  border-top: 2px solid #409eff;
+  border-radius: 50%;
+  -webkit-animation: iECmZH 1s infinite linear;
+  animation: iECmZH 1s infinite linear;
+}
+
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 0.6em 1.3em 0.6em;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  background-color: #e1e1e1;
+  -webkit-transition: background-color 200ms,color 200ms;
+  transition: background-color 200ms,color 200ms;
+  opacity: 0.7;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.c0:hover {
+  background-color: #c8c8c8;
+}
+
+.c0:focus {
+  background-color: #eee;
+}
+
+.c0:active {
+  background-color: #c8c8c8;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
   </button>
 </div>
 `;

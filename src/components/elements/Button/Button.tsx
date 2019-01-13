@@ -2,8 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { darken, lighten } from 'polished';
 
-import { setDimensions, alignVertical } from '../../../utils/style-helpers';
+import {
+  setDimensions,
+  alignVertical,
+  setDisabled,
+} from '../../../utils/style-helpers';
 import { getButtonColor } from './buttonHelpers';
+import { LoadingWrapper } from '../../wrappers';
+import { Spinner } from '../Spinner';
 
 export enum ButtonSizeEnum {
   normal = 'normal',
@@ -35,8 +41,6 @@ export interface ButtonProps {
   fluid?: boolean;
   /** text */
   text?: boolean;
-  /** loading */
-  loading?: boolean;
   /** align vertical - used if button has more elements */
   alignVertical?: boolean;
   /** href link */
@@ -45,10 +49,15 @@ export interface ButtonProps {
   children: React.ReactNode;
 }
 
+export interface LoadingButtonProps {
+  /** loading state */
+  isLoading?: boolean;
+}
+
 const StyledButton = styled.button<ButtonProps>`
   border: none;
   margin: 0;
-  padding: 8px 15px;
+  padding: 0.6em 1.3em 0.6em;
   width: auto;
   overflow: visible;
   font: inherit;
@@ -59,6 +68,7 @@ const StyledButton = styled.button<ButtonProps>`
   outline: none;
   user-select: none;
   cursor: pointer;
+  position: relative;
 
   color: ${props =>
     (props.ghost && (props.type && props.theme[props.type])) || 'white'};
@@ -70,8 +80,6 @@ const StyledButton = styled.button<ButtonProps>`
     getButtonColor({ theme: props.theme, type: props.type })};
   background-color: ${props => props.ghost && 'transparent'};
   background-color: ${props => props.text && 'transparent'};
-
-  opacity: ${props => (props.disabled || props.loading) && 0.7};
 
   border: ${props =>
     props.ghost &&
@@ -88,20 +96,20 @@ const StyledButton = styled.button<ButtonProps>`
   padding: ${props => props.circle && '0px'};
   line-height: ${props => props.circle && '100%'};
 
+  ${props => props.disabled && setDisabled()};
+
   font-size: ${props => {
     if (props.size === ButtonSizeEnum.normal) {
-      return '14px';
+      return '1rem';
     }
     if (props.size === ButtonSizeEnum.small) {
-      return '10px';
+      return '0.8rem';
     }
     if (props.size === ButtonSizeEnum.large) {
-      return '20px';
+      return '1.2rem';
     }
     return;
   }};
-
-  pointer-events: ${props => (props.disabled || props.loading) && 'none'};
 
   transition: background-color 200ms, color 200ms;
 
@@ -132,6 +140,11 @@ const StyledButton = styled.button<ButtonProps>`
   }
 `;
 
+const StyledLoadingButton = styled(StyledButton)<LoadingButtonProps>`
+  ${props => props.isLoading && setDisabled()};
+  overflow: hidden;
+`;
+
 export const Button = ({
   children,
   href,
@@ -142,8 +155,7 @@ export const Button = ({
   type = 'default',
   disabled,
   text,
-  loading,
-  alignVertical: align,
+  alignVertical: alignVerticalProp,
   size = ButtonSizeEnum.normal,
   ...rest
 }: ButtonProps &
@@ -161,11 +173,27 @@ export const Button = ({
       fluid={fluid}
       disabled={disabled}
       text={text}
-      loading={loading}
-      alignVertical={align}
+      alignVertical={alignVerticalProp}
       {...rest}
     >
       {children}
     </StyledButton>
   );
 };
+
+export const LoadingButton = ({
+  isLoading: isLoadingProp = false,
+  children,
+  ...rest
+}: LoadingButtonProps &
+  ButtonProps &
+  React.ButtonHTMLAttributes<HTMLButtonElement> &
+  React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
+  <LoadingWrapper isLoading={isLoadingProp}>
+    {({ isLoading }) => (
+      <StyledLoadingButton isLoading={isLoading} {...rest}>
+        {isLoading ? <Spinner size="15px" /> : <span>{children}</span>}
+      </StyledLoadingButton>
+    )}
+  </LoadingWrapper>
+);
