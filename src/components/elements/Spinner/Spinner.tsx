@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { themeGet } from '../../../utils/theme-helpers';
 
 export interface SpinnerProps {
   /** color */
@@ -27,7 +28,7 @@ const StyledSpinner = styled.div<SpinnerProps>`
 
   border: ${props => props.borderWidth} solid #eee;
   border-top: ${props => props.borderWidth} solid
-    ${props => props.color || props.theme.primary};
+    ${props => props.color || themeGet('colors.primary')(props)};
   border-radius: 50%;
 
   animation: ${rotate} 1s infinite linear;

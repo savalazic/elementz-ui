@@ -25,6 +25,18 @@ stories
     );
     return <Text tag={TextTagEnum.span}>{txt}</Text>;
   })
+  .add('headings', () => {
+    return (
+      <div>
+        <Text tag="h1">Heading 1</Text>
+        <Text tag="h2">Heading 2</Text>
+        <Text tag="h3">Heading 3</Text>
+        <Text tag="h4">Heading 4</Text>
+        <Text tag="h5">Heading 5</Text>
+        <Text tag="h6">Heading 6</Text>
+      </div>
+    );
+  })
   .add('bold', () => {
     const txt = text(
       'Content',
