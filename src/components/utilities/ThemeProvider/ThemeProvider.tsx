@@ -9,6 +9,13 @@ export interface ThemeProps {
     success?: string;
     warning?: string;
     danger?: string;
+    typography?: {
+      fontSize: number;
+      headingFontSize: number;
+      paragraphLineHeight: number;
+      headingLineHeight: number;
+      textMargin: number;
+    };
   };
 }
 
@@ -18,10 +25,24 @@ export const defaultTheme = {
   success: '#67c23a',
   warning: '#e6a23c',
   danger: '#f56c6c',
+  colors: {
+    default: '#e1e1e1',
+    primary: '#409eff',
+    success: '#67c23a',
+    warning: '#e6a23c',
+    danger: '#f56c6c',
+  },
+  typography: {
+    fontSize: 16,
+    headingFontSize: 40,
+    paragraphLineHeight: 1.5,
+    headingLineHeight: 1.25,
+    textMargin: 20,
+  },
 };
 
 export const ThemeProvider = ({
-  theme = defaultTheme,
+  theme = { ...defaultTheme },
   children,
 }: ThemeProps) => (
   <StyledThemeProvider theme={theme}>
