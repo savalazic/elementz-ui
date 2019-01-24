@@ -25,7 +25,10 @@ export enum ButtonTypeEnum {
   danger = 'danger',
 }
 
-export interface ButtonProps {
+type NativeButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
+  React.AnchorHTMLAttributes<HTMLAnchorElement>;
+
+export interface ButtonProps extends NativeButtonProps {
   /** @default normal */
   /** button size */
   size?: 'normal' | 'small' | 'large';
@@ -49,7 +52,7 @@ export interface ButtonProps {
   children: React.ReactNode;
 }
 
-export interface LoadingButtonProps {
+export interface LoadingButtonProps extends NativeButtonProps {
   /** loading state */
   isLoading?: boolean;
 }
@@ -158,9 +161,7 @@ export const Button = ({
   alignVertical: alignVerticalProp,
   size = ButtonSizeEnum.normal,
   ...rest
-}: ButtonProps &
-  React.ButtonHTMLAttributes<HTMLButtonElement> &
-  React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
+}: ButtonProps) => {
   return (
     <StyledButton
       as={href && 'a'}
@@ -185,10 +186,7 @@ export const LoadingButton = ({
   isLoading: isLoadingProp = false,
   children,
   ...rest
-}: LoadingButtonProps &
-  ButtonProps &
-  React.ButtonHTMLAttributes<HTMLButtonElement> &
-  React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
+}: LoadingButtonProps & ButtonProps) => (
   <LoadingWrapper isLoading={isLoadingProp}>
     {({ isLoading }) => (
       <StyledLoadingButton isLoading={isLoading} {...rest}>

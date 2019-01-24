@@ -16,7 +16,11 @@ export enum TextTagEnum {
   h6 = 'h6',
 }
 
-export interface TextProps {
+type NativeTextProps = React.HTMLAttributes<
+  HTMLParagraphElement | HTMLSpanElement | HTMLHeadingElement
+>;
+
+export interface TextProps extends NativeTextProps {
   /** @default p */
   /** tag of text */
   tag?:
@@ -112,10 +116,7 @@ export const Text = ({
   underline,
   truncate,
   ...rest
-}: TextProps &
-  React.HTMLAttributes<
-    HTMLParagraphElement | HTMLSpanElement | HTMLHeadingElement
-  >) => {
+}: TextProps) => {
   return (
     <StyledText
       as={tag}

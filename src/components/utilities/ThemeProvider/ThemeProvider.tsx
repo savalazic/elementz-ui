@@ -42,7 +42,7 @@ export const defaultTheme = {
 };
 
 export const ThemeProvider = ({
-  theme = { ...defaultTheme },
+  theme = defaultTheme,
   children,
 }: ThemeProps) => (
   <StyledThemeProvider theme={theme}>
