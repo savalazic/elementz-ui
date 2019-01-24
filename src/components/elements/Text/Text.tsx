@@ -113,7 +113,9 @@ export const Text = ({
   truncate,
   ...rest
 }: TextProps &
-  React.HTMLAttributes<HTMLParagraphElement | HTMLSpanElement>) => {
+  React.HTMLAttributes<
+    HTMLParagraphElement | HTMLSpanElement | HTMLHeadingElement
+  >) => {
   return (
     <StyledText
       as={tag}

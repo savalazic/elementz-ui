@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundImage component should match default snapshot 1`] = `
+<div>
+  <div
+    class="sc-bwzfXH jNCWaz"
+    src="https://source.unsplash.com/600x400/daily/?nature"
+  >
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sequi.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BackgroundImage component should match snapshot with backgroundPosition prop of \`top\` 1`] = `
+<div>
+  <div
+    class="sc-bwzfXH jNCWaz"
+    src="https://source.unsplash.com/600x400/daily/?nature"
+  >
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sequi.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Image component should match default snapshot 1`] = `
+<div>
+  <img
+    alt="mocked alt"
+    class="sc-bdVaJa bZxZdl"
+    src="https://source.unsplash.com/600x400/daily/?nature"
+  />
+</div>
+`;
+
+exports[`Image component should match snapshot with circle prop 1`] = `
+<div>
+  <img
+    alt="mocked alt"
+    class="sc-bdVaJa RzhRA"
+    src="https://source.unsplash.com/600x400/daily/?nature"
+  />
+</div>
+`;
+
+exports[`Image component should match snapshot with rounded prop 1`] = `
+<div>
+  <img
+    alt="mocked alt"
+    class="sc-bdVaJa jLXoOx"
+    src="https://source.unsplash.com/600x400/daily/?nature"
+  />
+</div>
+`;
+
+exports[`Image component should match snapshot with square prop 1`] = `
+<div>
+  <img
+    alt="mocked alt"
+    class="sc-bdVaJa kwsylX"
+    src="https://source.unsplash.com/600x400/daily/?nature"
+  />
+</div>
+`;
