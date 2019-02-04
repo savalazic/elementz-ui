@@ -41,16 +41,14 @@ stories.add('default', () => {
             <div style={{ height: '300px' }} />
             <hr />
           </div>
-          {isOpen && (
-            <Modal handleClickOutside={handleClose}>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                laborum culpa nulla sed officia voluptatum itaque repellat, iste
-                maiores aspernatur.
-              </p>
-              <button onClick={handleClose}>close</button>
-            </Modal>
-          )}
+          <Modal handleClickOutside={handleClose} isOpen={isOpen}>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              laborum culpa nulla sed officia voluptatum itaque repellat, iste
+              maiores aspernatur.
+            </p>
+            <button onClick={handleClose}>close</button>
+          </Modal>
         </div>
       )}
     </ModalBase>
