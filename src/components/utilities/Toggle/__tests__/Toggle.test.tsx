@@ -6,7 +6,9 @@ import { Toggle } from '../Toggle';
 
 describe('Toggle component', () => {
   it('should match default snapshot', () => {
-    const { container } = render(<Toggle />);
+    const { container } = render(
+      <Toggle>{({ on }) => <div>{on ? 'ON' : 'OFF'}</div>}</Toggle>,
+    );
     expect(container).toMatchSnapshot();
   });
 });
