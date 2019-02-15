@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
 
 import { infoConfig } from '../../../utils/info-config';
@@ -8,7 +7,6 @@ import { Image, BackgroundImage } from './Image';
 import { Text } from '../Text';
 
 const stories = storiesOf('Elements|Image', module);
-
 stories.addParameters(infoConfig);
 
 stories
