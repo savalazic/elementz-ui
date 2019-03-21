@@ -1,21 +1,25 @@
-import { configure, addDecorator } from '@storybook/react';
+import { configure, addDecorator, addParameters } from '@storybook/react';
 
 import { withKnobs } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
-import { withOptions } from '@storybook/addon-options';
+import { create } from '@storybook/theming';
 
 import { WrapperDecorator } from './WrapperDecorator';
 
 addDecorator(withInfo);
-addDecorator(
-  withOptions({
-    name: 'elementz-ui',
-    url: 'https://github.com/savalazic/elementz-ui/',
+addParameters({
+  options: {
+    theme: create({
+      base: 'light',
+      brandTitle: 'elementz-ui',
+      brandUrl: 'https://github.com/savalazic/elementz-ui/',
+      brandImage: 'https://www.svgrepo.com/show/77466/random-shape-outline.svg',
+    }),
     hierarchySeparator: /\//,
     hierarchyRootSeparator: /\|/,
-    addonPanelInRight: true,
-  }),
-);
+    panelPosition: 'right',
+  },
+});
 addDecorator(withKnobs);
 addDecorator(WrapperDecorator);
 
